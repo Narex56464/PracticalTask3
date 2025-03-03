@@ -1,0 +1,30 @@
+﻿<Page x:Class="WpfApp6.View.Pages.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp6.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="600"
+      Title="MainPage">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+            <TextBlock Text="Практическая работа 3"
+                       FontSize="30"
+                       FontWeight="Bold"
+                       Foreground="Black"/>
+            <Button Content="Задание 1-30"
+                    Padding="5"
+                    FontSize="25"
+                    FontWeight="Bold"
+                    Cursor="Hand"
+                    x:Name="BtnTasks"
+                    Click="BtnTasks_Click"
+                    Background="DarkKhaki"
+                    BorderBrush="black"
+                    Foreground="{Binding ElementName=BtnTasks, Path=BorderBrush}"
+                    BorderThickness="1"/>
+        </StackPanel>
+    </Grid>
+</Page>
